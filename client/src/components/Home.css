@@ -1,0 +1,170 @@
+.home-container {
+    background-color: #b3d9ff;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .weather-dashboard {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .city-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    background-color: #f0f0f0;
+  }
+  
+  .clear-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .search-button, .unit-toggle-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+    margin: 5px;
+  }
+  
+  .search-button {
+    background-color: #28a745;
+  }
+  
+  .search-button:hover {
+    background-color: #218838;
+  }
+  
+  .unit-toggle-button {
+    background-color: #007bff;
+  }
+  
+  .unit-toggle-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loading-message, .error-message {
+    text-align: center;
+    color: red;
+  }
+  
+  .current-weather {
+    background-color: #e6f2ff;
+    padding: 20px;
+    border: 2px solid #b4d9ff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .current-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .current-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .temperature {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .weather-icon {
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+  }
+  
+  .weather-description {
+    color: #666;
+    font-size: 18px;
+  }
+  
+  .forecast-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .forecast-grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .forecast-day {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  .forecast-day-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forecast-temp {
+    font-size: 24px;
+    font-weight: bold;
+  }
