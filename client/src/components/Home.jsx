@@ -12,26 +12,7 @@ import fog from '../assets/fog.png';
 import overcast from '../assets/overcast.png';
 import './Home.css'; // Import the CSS file
 
-const customIcons = {
-  '01d': sunny,
-  '01n': sunny,
-  '02d': partlycloudy,
-  '02n': partlycloudy,
-  '03d': cloudy,
-  '03n': cloudy,
-  '04d': overcast,
-  '04n': overcast,
-  '09d': rain,
-  '09n': rain,
-  '10d': rainy,
-  '10n': rainy,
-  '11d': storm,
-  '11n': storm,
-  '13d': snow,
-  '13n': snow,
-  '50d': fog,
-  '50n': fog,
-};
+
 
 function Home() {
   const [city, setCity] = useState('New York'); // Default city
@@ -60,13 +41,13 @@ function Home() {
         current: {
           temperature: response.data.list[0].temperature,
           description: response.data.list[0].weather,
-          icon: customIcons[response.data.list[0].icon] || `http://openweathermap.org/img/wn/${response.data.list[0].icon}@2x.png`,
+          
         },
         forecast: response.data.list.slice(1, 6).map(item => ({
           day: new Date(item.datetime).toLocaleDateString('en-US', { weekday: 'short' }),
           high: item.temperature,
           low: item.temperature,
-          icon: customIcons[item.icon] || `http://openweathermap.org/img/wn/${item.icon}@2x.png`,
+          
         })),
       });
     } catch (error) {
