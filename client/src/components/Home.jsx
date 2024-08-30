@@ -33,7 +33,7 @@ function Home() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.get(`http://localhost:3000/weather`, {
+      const response = await axios.get(`https://adaptnxt-ass-uoqt.onrender.com/weather`, {
         params: { city },
       });
 
